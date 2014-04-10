@@ -31,7 +31,7 @@ for i in 1 2 3 4 5; do
 done
 
 for i in {1..2}; do
-  echo "FOO #$i"
+  echo "FOO Number $i"
 done
 
 index=0
