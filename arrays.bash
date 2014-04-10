@@ -1,5 +1,6 @@
 #! /bin/bash
 
+websites[0]="target.com"
 websites[1]="google.com"
 websites[2]="yahoo.com"
 websites[3]="pdx.edu"
@@ -9,7 +10,7 @@ websites[5]="cat.pdx.edu"
 favorites="reddit.com facebook.com google.com wired.com"
 echo ""
 echo "echoing websites array"
-for index in 1 2 3 4 5; do
+for index in 0 1 2 3 4 5; do
   echo "${websites[index]}"
 done
 

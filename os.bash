@@ -33,3 +33,11 @@ done
 for i in {1..2}; do
   echo "FOO #$i"
 done
+
+index=0
+limit=10
+
+while [ "$index" -lt "$limit" ]; do
+    echo "We are at index $index"
+    index=$(($index+1)) #increment the index
+done

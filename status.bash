@@ -2,26 +2,14 @@
 
 #simple function demonstration
 
-#echo "good" > status
-#echo "bad" > status
-
-echo_status_g(){
-  echo "current status is good"
+echo_status(){
+  if [ "$1" == "good" ]; then
+    echo "status is good."
+  elif [ "$1" == "bad" ]; then
+    echo "status is bad. you should fix that"
+  fi
 }
 
-echo_status_b(){
-  echo "current status is bad. you should fix that."
-}
-
-#some reading of a file
-
-status=`cat status.txt`
-
-if [ "$status" == "bad" ]; then
-   echo_status_b
-fi
-
-if [ "$status" == "good" ]; then
-  echo_status_g
-fi
+echo_status "bad"
+echo_status "good"
 
