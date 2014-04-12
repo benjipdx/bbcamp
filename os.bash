@@ -18,6 +18,9 @@ if [ -f /etc/debian_version ]; then
 elif [ -f /etc/redhat-release ]; then
   echo "its a centos / redhat box"
   os="centos"
+elif [ -d /etc/mach_init.d ]; then
+  echo "its a mac"
+  os="OSX"
 else
   echo "I dunno, probably unix"
 fi
