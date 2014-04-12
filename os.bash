@@ -18,6 +18,8 @@ if [ -f /etc/debian_version ]; then
 elif [ -f /etc/redhat-release ]; then
   echo "its a centos / redhat box"
   os="centos"
+else
+  echo "I dunno, probably unix"
 fi
 
 echo '(single quotes) os is $os'
